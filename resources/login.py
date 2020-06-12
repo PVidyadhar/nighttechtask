@@ -14,7 +14,7 @@ class Login(Resource):
         if data['emailid'] == "":
             return {"message":"emailid cannot be empty"},201
 
-        try:
-            return f"""Your name is {data['name']} and email id is {data['emailid']} and image is received succesully"""
-        except:
-            return {"message":"There was an error while returning data."},500
+        #try:
+        return f"""Your name is {data['name']} and email id is {data['emailid']} and image is received succesully"""
+        #except:
+        #return {"message":"There was an error while returning data."},500
