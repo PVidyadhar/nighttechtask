@@ -5,7 +5,7 @@ class Login(Resource):
     def post(self):
         data=request.form['data']
         data = json.loads(data) 
-        #image=request.files.get('file','')
+        image=request.files.get('file','')
         #image.save(f'''D:/{data['name']}.jpg''')
         #if (open(f'''D:/{data['name']}.jpg''',"rb", buffering=0) is None):
             #return {"message":"image cannot be empty"},201'''
