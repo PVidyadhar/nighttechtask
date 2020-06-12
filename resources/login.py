@@ -7,7 +7,7 @@ class Login(Resource):
         data=request.form['data']
         data = json.loads(data) 
         image=request.files.get('file','')
-        filename=f'''D:/{data['name']}.jpg'''
+        filename=f'''{data['name']}.jpg'''
         #if image.status_code == 200:
         #image.raw.decode_content = True
         #image.save(f'''D:/{data['name']}.jpg''')
